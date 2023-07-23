@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+}
+
+header .logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+header .menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .menu-line{
+    height: 3px;
+    background-color: #333;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+
+.leftside{
+    flex: 1;
+    background-color:#eda7a7;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.info{
+   color: white;
+}
+
+.profession{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #e9ccc1;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+
+.buttons a{
+    text-decoration: none;
+    color: #333;
+    border: 1px solid white;
+    padding: 20px 35px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px #333;
+}
+
+.button1{
+    background-color: #e9ccc1;
+}
+
+.button2{
+    background-color: white;
+}
+
+
+.buttons a:hover{
+    opacity: 0.8;
+}
+
+
+.rightside{
+    flex: 1;
+    background-image: url('../Images/Model.png');
+    background-size: cover;
+    background-position: top;
+}
+
+footer{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+footer a{
+    color: #555;
+}
+
+
+@media (max-width: 850px){
+    header{
+        position: initial;
+        background-color: #eda7a7;
+    }
+
+    header .menu-line{
+        background-color: white;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .leftside{
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .buttons{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        position: initial;
+        background-color: #e9ccc1;
+        color: #333;
+        font-size: 16px;
+    }
+
+    footer a{
+        color: #333;
+    }
+}
+
+
+@media (max-width: 450px){
+    .name{
+        font-size: 30px;
+    }
+
+    .buttons a{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
