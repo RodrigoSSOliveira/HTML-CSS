@@ -23,8 +23,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: aquamarine;
-    font-size: 15px;
+    color: #5EFFAC;
+    
+}
+
+.left-login h1{
+    font-size: 2.5vw;
+}
+
+.animation{
+    width: 35vw;
+    margin-top: 25px;
 }
 
 .right-login{
@@ -49,7 +58,7 @@
 }
 
 .card-login h1{
-    color: aquamarine;
+    color: #5EFFAC;
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 20px;
@@ -88,7 +97,7 @@
 
 button{
     width: 100%;
-    background-color: aquamarine;
+    background-color: #5EFFAC;
     width: 100%;
     padding: 10px 60px;
     border-radius: 10px;
@@ -101,4 +110,48 @@ button{
     letter-spacing: 3px;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+@media (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+
+}
+
+
+@media (max-width: 600px){
+    .main-login{
+       flex-direction: column;
+    }
+    
+    .left-login h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .animation{
+        width: 40vh;
+        margin-bottom: 40px;
+    }
+
+    .card-login{
+        height: 30vh;
+    }
+}
+
 
