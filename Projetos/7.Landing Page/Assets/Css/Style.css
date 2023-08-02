@@ -4,9 +4,84 @@
     box-sizing: border-box;
 }
 
+header{
+    background-image: url(../Images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    color: white;
+    
+}
 
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 35px;
+}
+
+.button-menu{
+    padding: 5px 15px;
+    background-color: aquamarine;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+.banner{
+    background-image: url(../Images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 350px;
+    height: 360px;
+    padding: 56px;
+    color: white;
+    background-color: #341b2b80;
+
+}
+
+.box h1{
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.bar{
+    border-top: 2px solid white;
+    margin: 2px 0px;
+}
+
+.box a{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.button-banner{
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-banner:hover{
+    opacity: 60%;
 }
