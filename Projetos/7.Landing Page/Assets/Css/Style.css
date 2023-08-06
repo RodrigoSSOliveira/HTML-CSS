@@ -84,8 +84,7 @@ header{
 
 .button-banner:hover{
     opacity: 60%;
-    
-
+}
 
 .mainbox{
     display: flex;
@@ -95,5 +94,4 @@ header{
     padding: 56px;
     color: white;
     background-color: aquamarine;
-
 }
