@@ -95,3 +95,12 @@ header{
     color: white;
     background-color: aquamarine;
 }
+
+.main span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
