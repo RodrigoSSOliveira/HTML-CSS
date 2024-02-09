@@ -156,10 +156,49 @@ header .menu-icon div{
 
 /* SEARCH */
 
+.search{
+    background-color: #1f1f1f;
+    padding: 80px 0;    
+    margin-top: -100px;
+}
 
+.phrase{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
 
+.inputs{
+    display: flex;
+    gap: 100px;
+}
 
+.inputs .inputleft, .inputs .inputright{
+    flex: 1;        
+    background-color: #2b2b2b;
+}
 
+.search input, .search select{
+    width: 100%;
+    background-color: #2b2b2b;
+    color: #fff;
+    font-size: 24px;
+    outline: none;
+    padding: 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.search input{
+    background-image: url(./searchIcon.png);
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    padding-left: 60px;
+}
+
+.search select{
+    border-right: 20px solid transparent;
+}
 
 
 
@@ -201,5 +240,18 @@ header .menu-icon div{
 
     .banner .rightside img{
         height: 300px;
+    }
+
+    .search{
+        padding-bottom: 30px;
+    }
+
+    .phrase{
+        text-align: center;
+    }
+
+    .inputs{
+        flex-direction: column;
+        gap: 20px;
     }
 }
