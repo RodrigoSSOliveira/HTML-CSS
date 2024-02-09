@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: 'Inter';
+    font-size: 18px;
+    background-color: #141414;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* HEADER */
+
+.logo a{
+    font-family: 'calistoga';
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a span{
+    color: #fe6a0f;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    gap: 50px;
+}
+
+header nav{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header nav .leftside{
+    display: flex;
+    flex: 1;
+}
+
+header nav li{
+    margin: 0 30px;
+}
+
+header nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav li a:hover{
+    color: #999;
+}
+
+header nav .button{
+    display: block;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav .button:hover{
+    color: #999;
+    border-color: #999;
+}
+
+header .menu{
+    display: none;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+header .menu-icon{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .menu-icon div{
+    height: 6px;
+    background-color: #fff;   
+}
+
+
+
+/* BANNER */
+
+.banner .container{
+    display: flex;
+}
+
+.banner .leftside, .banner .rightside{
+    flex: 1;
+}
+
+.banner .leftside{
+    padding-bottom: 150px;
+}
+
+.banner .leftside h1{
+    font-family: 'calistoga';
+    font-size: 70px;
+    line-height: 74px;
+    margin-top: 50px;
+}
+
+.banner .leftside p{
+    font-size: 20px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+.banner .button{
+    display: inline-block;
+    background-color: #fe6a0f;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.banner .button:hover{
+    opacity: 0.8;
+}
+
+.banner .rightside{
+    text-align: center;
+}
+
+.banner .rightside img{
+    width: auto;
+    height: 600px;
+}
+
+
+/* SEARCH */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 820px){
+    header nav{
+        display: none;
+    }
+
+    header .menu{
+        display: flex;
+    }
+
+    .banner .container{
+        flex-direction: column;
+    }
+
+    .banner .leftside{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .banner .leftside h1{
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .banner .rightside{
+        padding-bottom: 50px;
+    }
+
+    .banner .rightside img{
+        height: 300px;
+    }
+}
